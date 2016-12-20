@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Crystal Collector</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	
+	<div class="container">
+
+		<header>
+			<h1>Crystall Collector!</h1>
+		</header>
+
+		<div class="instr">
+			<p>You will be given a random number as Target Score at the start of each game.
+			There are four crystals below. By clicking on a crystal you will add a specific amount of points to your Current Score.
+			You win the game by matching your Current Score to the Target Score, and you lose the game if your Current Score goes above the Target Score.
+			The value of each crystal is hidden from you until you click on it.
+			Each time when the game starts, the game will change the value of each crystal.
+			</p>
+		</div>
+
+		<button type="button" class="btn btn-info" id="play">Play</button>
+
+		<div class="numloc">
+			<p>Target Score: </p>
+			<p id="targetnum"></p>
+		</div>
+
+		<div class="images">
+		   <img id="1" class="img" src="assets/images/cryatal1.jpg" >
+		   <img id="2" class="img" src="assets/images/cryatal2.jpg" >
+		   <img id="3" class="img" src="assets/images/cryatal3.jpg" >
+		   <img id="4" class="img" src="assets/images/cryatal4.jpg" >
+		</div>
+
+		<div class="numloc">
+			<p>Current Score:</p>
+			<p id="currentnum"></p>
+		</div>
+
+		<div class="gameStat">
+			<p>Wins: <span id="winNum"></span></p>
+		</div>
+
+		<div class="gameStat">
+			<p>Losses: <span id="lossNum"></span></p>
+		</div>
+
+		<div class="wonOrLost">
+			<p id="wonOrLostMsg"></p>
+		</div>
+
+	</div>
+
+	<!-- script tag should be at the bottom of the body so it can change the body after it has been loaded -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
